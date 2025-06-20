@@ -1,35 +1,42 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 95%;
     margin: 0 auto;
 }
-header .container{
+
+header .container {
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header .logo{
+
+header .logo {
     display: flex;
     gap: 10px;
 }
-header .logo .fa-bars{
+
+header .logo .fa-bars {
     font-size: 23px;
     cursor: pointer;
 }
-header .logo img{
+
+header .logo img {
     width: 100px;
     object-fit: contain;
 }
-header .search{
+
+header .search {
     width: 300px;
     position: relative;
 }
-header .search input{
+
+header .search input {
     width: 100%;
     padding: 7px 10px 5px 35px;
     outline: none;
@@ -39,20 +46,23 @@ header .search input{
     color: #939098;
     background-color: #f0ebfc;
 }
-header .search .fa-magnifying-glass{
+
+header .search .fa-magnifying-glass {
     position: absolute;
     top: 25%;
     left: 4%;
     color: #939098;
     cursor: pointer;
 }
-header .user{
+
+header .user {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
 }
-header .user .notification{
+
+header .user .notification {
     width: 35px;
     height: 35px;
     display: flex;
@@ -61,10 +71,12 @@ header .user .notification{
     position: relative;
     cursor: pointer;
 }
-header .user .notification .fa-bell{
+
+header .user .notification .fa-bell {
     font-size: 18px;
 }
-header .user .notification span{
+
+header .user .notification span {
     width: 20px;
     height: 20px;
     display: flex;
@@ -79,13 +91,14 @@ header .user .notification span{
     background-color: #f50057;
 }
 
-header .user .user-info{
+header .user .user-info {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
-header .user .user-info .img{
+
+header .user .user-info .img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -94,16 +107,34 @@ header .user .user-info .img{
     justify-content: center;
     align-items: center;
 }
-header .user-info .img img{
+
+header .user-info .img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-header .user-info .name span{
+
+header .user-info .name span {
     font-size: 15px;
     text-transform: capitalize;
 }
-header .user-info .name .fa-angle-down{
+
+header .user-info .name .fa-angle-down {
     margin-left: 10px;
     cursor: pointer;
+}
+
+.d-content {
+    display: grid;
+    grid-template-columns: 10% 70%;
+}
+
+.d-content .side-bar {}
+
+.d-content .main-content {}
+
+/* Side Bar */
+.side-bar {
+
+    background-color: #f9fbfc;
 }
