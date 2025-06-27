@@ -286,9 +286,26 @@ header .profil-info .name .fa-angle-down {
 }
 /* Top Nav */
 .main-section .main-content .top-nav{
+    padding: 15px 0;
+    border-radius: 3px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #fff;
+}
+/* filter */
+.main-section .top-nav .filter{
+    width: 15%;
+}
+.main-section .top-nav .filter select{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    color: #1d1d1d;
+    border-bottom: 1px solid #e5e5e5;
 }
 /* Links */
 .main-section .top-nav .links{
@@ -303,4 +320,17 @@ header .profil-info .name .fa-angle-down {
     color: #1d1d1d;
     font-size: 15px;
     text-decoration: none;
+}
+/* show*/
+.main-section .top-nav .show{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.main-section .top-nav .show .grid,
+.main-section .top-nav .show .list{
+    font-size: 18px;
+    cursor: pointer;
 }
