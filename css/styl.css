@@ -355,6 +355,11 @@ header .profil-info .name .fa-angle-down {
   color: #fff;
   background-color: #00d67e;
   text-decoration: none;
+  transition: 0.7s ease;
+}
+.main-content .text a:hover {
+  color: #1d1d1d;
+  text-decoration: underline;
 }
 /* Big Carts */
 .main-section .main-content .big-carts {
@@ -429,10 +434,12 @@ header .profil-info .name .fa-angle-down {
 .main-section .cart .titel .description p {
   font-size: 13px;
 }
+.main-section .cart .information {
+  z-index: 22;
+}
 .main-section .cart .information a {
   color: #fff;
   font-size: 13px;
-  z-index: 22;
 }
 .main-section .big-carts .big-img {
   width: 180px;
@@ -447,4 +454,23 @@ header .profil-info .name .fa-angle-down {
   height: 100%;
   object-fit: contain;
   object-position: right;
+}
+.main-section .big-carts .cart::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  left: 0;
+  bottom: 0;
+  background-color: #3a3a3a;
+  z-index: 20;
+}
+.main-section .big-carts .cart:first-of-type::before {
+  background: linear-gradient(to top, #03a9f4, transparent);
+}
+.main-section .big-carts .cart:nth-of-type(2)::before {
+  background: linear-gradient(to top, #7b4dfb, transparent);
+}
+.main-section .big-carts .cart:last-of-type::before {
+  background: linear-gradient(to top, #3b58f5, transparent);
 }
