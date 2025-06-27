@@ -477,6 +477,11 @@ header .profil-info .name .fa-angle-down {
 }
 
 /* Small Carts */
+.main-section .small-carts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
 .main-section .small-carts .cart {
   padding: 15px;
   border-radius: 5px;
