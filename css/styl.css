@@ -269,6 +269,7 @@ header .profil-info .name .fa-angle-down {
     list-style: none;
     background: #fff;
     margin-left: 50px;
+    display: none;
 }
 .side-bar >ul .sub-mune li{
     margin: 15px;
@@ -282,4 +283,24 @@ header .profil-info .name .fa-angle-down {
     width: 80%;
     padding: 35px 15px;
     background-color: #f1f5f8;
+}
+/* Top Nav */
+.main-section .main-content .top-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Links */
+.main-section .top-nav .links{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+   
+}
+.main-section .top-nav .links a{
+    color: #1d1d1d;
+    font-size: 15px;
+    text-decoration: none;
 }
