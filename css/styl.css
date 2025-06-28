@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -129,6 +130,7 @@ header .profil-info .name {
   font-size: 15px;
   text-transform: capitalize;
   position: relative;
+  cursor: default;
 }
 
 header .profil-info .name .fa-angle-down {
@@ -148,6 +150,9 @@ header .name .drop-nav {
   box-shadow: 0 5px 10px rgb(0, 0 ,0 , .3);
   background-color: #fff;
   display: none;
+}
+.drop-nav.open{
+  display: block !important;
 }
 header .name .drop-nav li {
   padding: 5px;
@@ -297,6 +302,7 @@ header .name .drop-nav li a {
 .side-bar ul li a i {
   padding: 3px 6px;
   border-radius: 3px;
+  font-style: unset;
   background-color: #1de5b3;
 }
 /* sub-mune */
@@ -709,11 +715,12 @@ header .name .drop-nav li a {
     flex-wrap: wrap;
     gap: 15px;
   }
-  header .profil-info .name span {
-    display: none;
+  header .search {
+    order: 3;
+    margin: 0 auto;
   }
   .main-section .main-content {
-    padding: 50px 15px 25px;
+    padding: 100px 15px 25px;
   }
   .main-section .top-nav {
     padding: 15px;
@@ -731,10 +738,6 @@ header .name .drop-nav li a {
 
 /* X-Small devices (portrait phones, less than 500px) */
 @media (max-width: 499.98px) {
-  header .search {
-    order: 3;
-    margin: 0 auto;
-  }
   .main-section .top-nav .links {
     margin: 0 auto;
     flex-wrap: wrap;
