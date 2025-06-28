@@ -11,8 +11,12 @@ body {
 
 /* Header Section */
 header {
+  width: 100%;
+  position: fixed;
+  top: 0;
   background-color: #ffff;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.149);
+ z-index: 9999;
 }
 
 header .container {
@@ -83,16 +87,17 @@ header .profil .notification .fa-bell {
 }
 
 header .profil .notification span {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: normal;
   border-radius: 50%;
   position: absolute;
-  top: -3px;
-  right: -3px;
+  top: -2px;
+  right: -2px;
   color: #fff;
   background-color: #f50057;
 }
@@ -132,6 +137,7 @@ header .profil-info .name .fa-angle-down {
 
 /* Main Section */
 .main-section {
+  padding-top: 65px;
   display: flex;
   align-items: flex-start;
 }
@@ -139,8 +145,10 @@ header .profil-info .name .fa-angle-down {
 /* Side Bar */
 .main-section .side-bar {
   width: 20%;
-  padding: 35px 0px;
+  height: 100vh;
+  padding: 50px 0 0 1px;
   background-color: #f9fbfc;
+  position: fixed;
 }
 
 .side-bar .user {
@@ -235,7 +243,7 @@ header .profil-info .name .fa-angle-down {
 .side-bar > ul > li > a {
   padding: 15px 20px;
   list-style: none;
-  border-left: 2px solid transparent;
+  border-left: 3px solid transparent;
   transition: 0.5s ease;
 }
 .side-bar > ul > li > a.active,
@@ -281,8 +289,9 @@ header .profil-info .name .fa-angle-down {
 /* Main Content */
 .main-section .main-content {
   width: 80%;
-  padding: 35px 25px;
+  padding: 50px 25px;
   background-color: #f1f5f8;
+  margin-left: auto;
 }
 /* Top Nav */
 .main-section .main-content .top-nav {
