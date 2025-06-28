@@ -1,7 +1,10 @@
-let dropIcon = document.querySelector(".name"),
-  dropNav = document.querySelector(".drop-nav");
+let dropIcon = document.querySelectorAll(".drop-dawon");
 
- dropIcon.addEventListener('click', function(){
-    dropNav.classList.toggle("open")
- })
-  
+dropIcon.forEach((link)=>{
+    link.addEventListener('click', function(e){
+        e.preventDefault;
+       let newId = link.getAttribute('data-set');
+       document.getElementById(newId).classList.toggle('open')
+    })
+})
+   

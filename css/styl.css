@@ -29,7 +29,7 @@ header .container {
 
 header .logo {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 header .logo .fa-bars {
@@ -147,11 +147,11 @@ header .name .drop-nav {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  box-shadow: 0 5px 10px rgb(0, 0 ,0 , .3);
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
   background-color: #fff;
   display: none;
 }
-.drop-nav.open{
+.open {
   display: block !important;
 }
 header .name .drop-nav li {
@@ -173,17 +173,15 @@ header .name .drop-nav li a {
 /* Main Section */
 .main-section {
   padding-top: 65px;
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 20% 80%;
 }
 
 /* Side Bar */
 .main-section .side-bar {
-  width: 20%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 50px 0 0 1px;
   background-color: #f9fbfc;
-  position: fixed;
 }
 
 .side-bar .user {
@@ -284,7 +282,7 @@ header .name .drop-nav li a {
 .side-bar > ul > li > a.active,
 .side-bar > ul > li > a:hover {
   border-color: #f50057;
-  background: linear-gradient(to right, #f500561a, transparent);
+  background-image: linear-gradient(to right, #f500561a, transparent);
 }
 .side-bar > ul > li > a {
   font-size: 14px;
@@ -307,27 +305,23 @@ header .name .drop-nav li a {
 }
 /* sub-mune */
 .side-bar > ul .sub-mune {
-  width: fit-content;
-  padding: 10px 15px;
-  border-radius: 8px;
+  padding-left: 50px;
   list-style: none;
-  background: #fff;
-  margin-left: 50px;
   display: none;
 }
 .side-bar > ul .sub-mune li {
-  margin: 15px;
+  margin: 5px 0 10px;
 }
 .side-bar > ul .sub-mune a {
+  margin: 5px;
+  font-size: 14px;
   color: #1d1d1d;
   text-decoration: none;
 }
 /* Main Content */
 .main-section .main-content {
-  width: 80%;
   padding: 50px 25px;
   background-color: #f1f5f8;
-  margin-left: auto;
 }
 /* Top Nav */
 .main-section .main-content .top-nav {
