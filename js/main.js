@@ -1,4 +1,6 @@
-let dropIcon = document.querySelectorAll(".drop-dawon");
+let barIcon = document.getElementById("bar"),
+    mainSection = document.querySelector(".main-section"),
+    dropIcon = document.querySelectorAll(".drop-dawon");
 
 dropIcon.forEach((link)=>{
     link.addEventListener('click', function(e){
@@ -8,3 +10,7 @@ dropIcon.forEach((link)=>{
     })
 })
    
+
+barIcon.addEventListener('click', function(){
+    mainSection.classList.toggle("f-width");
+})

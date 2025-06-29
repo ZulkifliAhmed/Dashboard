@@ -175,6 +175,11 @@ header .name .drop-nav li a {
   padding-top: 65px;
   display: grid;
   grid-template-columns: 20% 80%;
+    transition: .5s;
+}
+
+.main-section.f-width{
+  grid-template-columns: 5% 95%;
 }
 
 /* Side Bar */
@@ -222,8 +227,8 @@ header .name .drop-nav li a {
 .side-bar .user .user-text {
   margin: 25px 0 15px;
   text-align: center;
+ transition: .5s ease;
 }
-
 .side-bar .user .user-text h3 {
   color: #3a3a3a;
   font-size: 14px;
@@ -272,19 +277,13 @@ header .name .drop-nav li a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+    list-style: none;
 }
+
 .side-bar > ul > li > a {
   padding: 15px 20px;
-  list-style: none;
   border-left: 3px solid transparent;
   transition: 0.5s ease;
-}
-.side-bar > ul > li > a.active,
-.side-bar > ul > li > a:hover {
-  border-color: #f50057;
-  background-image: linear-gradient(to right, #f500561a, transparent);
-}
-.side-bar > ul > li > a {
   font-size: 14px;
   font-weight: 500;
   text-transform: capitalize;
@@ -294,6 +293,11 @@ header .name .drop-nav li a {
   justify-content: space-between;
   align-items: center;
 }
+.side-bar > ul > li > a.active,
+.side-bar > ul > li > a:hover {
+  border-color: #f50057;
+  background-image: linear-gradient(to right, #f500561a, transparent);
+}
 .side-bar ul li a img {
   margin-right: 15px;
 }
@@ -302,12 +306,34 @@ header .name .drop-nav li a {
   border-radius: 3px;
   font-style: unset;
   background-color: #1de5b3;
+    transition: .5s ease;
+}
+.f-width .side-bar .user .user-icon,
+.f-width .side-bar .user .user-text,
+.f-width .side-bar ul li a i{
+  display: none;
+}
+.f-width .side-bar >ul> li> a{
+  font-size: 0;
 }
 /* sub-mune */
 .side-bar > ul .sub-mune {
   padding-left: 50px;
   list-style: none;
   display: none;
+}
+.f-width .side-bar > ul > li {
+  position: relative;
+}
+.f-width .side-bar > ul .sub-mune{
+  width: fit-content;
+  padding: 5px;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  z-index: 99;
+  border-radius: 0 5px 5px 0;
+  background-color: #f9fafb;
 }
 .side-bar > ul .sub-mune li {
   margin: 5px 0 10px;
