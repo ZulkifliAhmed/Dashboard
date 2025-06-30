@@ -10,7 +10,6 @@ dropIcon.forEach((link)=>{
     })
 })
    
-
 barIcon.addEventListener('click', function(){
     mainSection.classList.toggle("f-width");
 })
