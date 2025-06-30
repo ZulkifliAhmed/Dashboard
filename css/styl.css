@@ -152,7 +152,7 @@ header .name .drop-nav {
   display: none;
 }
 .open {
-  display: block;
+  display: block !important;
 }
 header .name .drop-nav li {
   padding: 5px;
@@ -626,6 +626,10 @@ header .name .drop-nav li a {
 
 /* Medium devices (tablets, less than 1200px) */
 @media (max-width: 1199.98px) {
+  
+.main-section.f-width {
+  grid-template-columns: 10% 90%;
+}
   .main-section .top-nav .links {
     gap: 70px;
   }
@@ -681,157 +685,163 @@ header .name .drop-nav li a {
   }
 }
 
-/* Medium devices (tablets, less than 1200px) */
-/* @media (max-width: 1199.98px) {
-  .main-section .main-content .big-carts {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .main-section .small-carts {
-    grid-template-columns: repeat(3, 1fr);
-  }
-} */
-
-/* Medium devices (tablets, less than 992px) */
-/* @media (max-width: 991.98px) {
-  .main-section .main-content .top-nav {
-    padding: 15px;
-    justify-content: space-between;
-  }
-  .main-section .top-nav .links {
-    width: 60%;
-    padding-left: 20px;
-  }
-  .main-section .top-nav .show {
-    gap: 20px;
-  }
-  .main-section .side-bar {
-    display: none;
-  }
-  .main-section .main-content {
-    width: 100%;
-  }
-} */
-
 /* Small devices (landscape phones, less than 768px) */
-/* @media (max-width: 767.98px) {
-  header .logo .fa-bars {
-    font-size: 19px;
-  }
-
-  header .logo img {
-    width: 90px;
-  }
-
-  header .search {
-    width: 200px;
-  }
-
-  header .search input {
-    padding: 5px 5px 5px 30px;
-    font-size: 14px;
-  }
-  header .profil {
-    gap: 10px;
-  }
-  header .profil .notification span {
-    width: 15px;
-    height: 15px;
-    top: 0px;
-    right: 0px;
-  }
-
-  header .profil .profil-info {
-    gap: 10px;
-  }
-
-  header .profil .profil-info .img {
-    width: 30px;
-    height: 30px;
-  }
-  header .profil-info .name span {
-    font-size: 13px;
-  }
-
-  header .profil-info .name .fa-angle-down {
-    margin-left: 5px;
-  }
-  .main-section .main-content .top-nav {
-    padding: 10px;
-  }
-  .main-section .top-nav .filter select {
-    font-size: 13px;
-  }
-  .main-section .top-nav .links {
-    width: fit-content;
-    padding-left: 0;
-    margin-left: 0;
-    justify-content: center;
-    gap: 15px;
-  }
-  .main-section .top-nav .links a {
-    font-size: 14px;
-  }
-  .main-section .top-nav .show {
-    width: fit-content;
-    gap: 10px;
-  }
-  .main-section .main-content .big-carts {
-    width: calc(100% - 5px);
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .main-section .small-carts {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
-
-/* X-Small devices (portrait phones, less than 576px) */
-/* @media (max-width: 575.98px) {
-  header .container {
-    padding: 15px;
-    flex-wrap: wrap;
-    gap: 15px;
+@media (max-width: 767.98px) {
+  .main-section {
+    grid-template-columns: 24% 76%;
   }
   header .search {
-    order: 3;
-    margin: 0 auto;
-  }
-  .main-section .main-content {
-    padding: 100px 15px 25px;
-  }
-  .main-section .top-nav {
-    padding: 15px;
+    display: none;
   }
   .main-section .top-nav .filter {
     display: none;
   }
-  .main-content .text {
-    padding: 25px 0;
+  .main-section .top-nav .show {
+    gap: 15px;
+  }
+  .side-bar .user .user-text {
+    display: none;
+  }
+  .side-bar .user .user-icon span {
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+  }
+  .side-bar .user .user-icon span img {
+    margin-bottom: -10px;
+  }
+  .side-bar > ul > li > a {
+    font-size: 0;
+  }
+  .side-bar > ul > li > a i {
+    font-size: 14px;
+  }
+  .main-section .main-content .top-nav {
+    padding: 10px;
+    gap: 5;
   }
   .main-section .small-carts {
     grid-template-columns: repeat(1, 1fr);
   }
-} */
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  header .container {
+    padding: 15px 15px;
+  }
+  header .logo img {
+    width: 80px;
+  }
+  header .logo .fa-bars {
+    font-size: 19px;
+  }
+  header .profil .notification {
+    width: 30px;
+    height: 30px;
+  }
+  header .profil {
+    gap: 5px;
+  }
+  header .profil .profil-info {
+    gap: 5px;
+  }
+  header .profil-info .name span {
+    display: none;
+  }
+  header .name .drop-nav {
+    width: fit-content;
+    padding: 0 10px;
+    top: 41px;
+    right: -50%; 
+}
+  .main-section {
+    grid-template-columns: 0% 100%;
+  }
 
-/* X-Small devices (portrait phones, less than 500px) */
-/* @media (max-width: 499.98px) {
-  .main-section .top-nav .links {
-    margin: 0 auto;
-    flex-wrap: wrap;
+  .main-section .side-bar {
+    overflow: hidden;
+  }
+  .main-section.f-width {
+    grid-template-columns: 100% 0%;
+  }
+  .main-section.f-width .side-bar {
+    z-index: 999;
+  }
+  .main-section.f-width {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .main-section.f-width .user-img {
+    margin: 0 auto 0 5px;
+  }
+  .main-section .main-content .top-nav {
+    justify-content: center;
   }
   .main-section .top-nav .show {
     display: none;
   }
-
+  .side-bar .user .user-icon span {
+    display: none;
+  }
+  .side-bar > ul {
+    margin-top: 30px;
+    gap: 10px;
+  }
+  .side-bar > ul > li > a {
+    font-size: 0;
+  }
+  .side-bar > ul > li > a i {
+    display: none;
+  }
+  .f-width .side-bar > ul .sub-mune {
+    margin-left: 15px;
+    position: unset;
+}
+.side-bar > ul .sub-mune li:last-of-type {
+    margin-bottom: 0;
+}
+}
+/* XX-Small devices (portrait phones, less than 400px) */
+@media (max-width: 399.98px) {
+  .main-section .top-nav .links {
+    padding: 5px;
+  }
+  .main-section .top-nav .links a {
+    font-size: 12px;
+  }
+  .main-content .text {
+    padding: 40px 0 20px;
+  }
+  .main-content .text .titel h5 {
+    font-size: 12px;
+  }
   .main-content .text .titel h3 {
-    font-size: 14px;
+    font-size: 15px;
   }
   .main-content .text a {
     padding: 5px 10px;
     font-size: 14px;
   }
+  .main-section .big-carts .cart {
+    padding: 15px 10px;
+    gap: 30px;
+  }
+  .main-section .cart .titel .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .main-section .cart .titel .description h2 {
+    font-size: 15px;
+  }
+  .main-section .cart .titel .description p {
+    font-size: 13px;
+  }
+  .main-section .cart .information a {
+    font-size: 13px;
+  }
   .main-section .big-carts .big-img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     right: -5px;
   }
-} */
+}
