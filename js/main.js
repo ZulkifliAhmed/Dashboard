@@ -1,7 +1,25 @@
 let barIcon = document.getElementById("bar"),
+  mainLinks = document.querySelectorAll(".main-links"),
   mainSection = document.querySelector(".main-section"),
+  list = document.querySelector(".list"),
+  grid = document.querySelector(".grid"),
+  alertCarts = document.querySelectorAll(".alert-carts"),
   links = document.querySelectorAll(".links li"),
-  dropIcon = document.querySelectorAll(".drop-dawon");
+  dropIcon = document.querySelectorAll(".drop-dawon"),
+  dataToShow = document.querySelectorAll(".data");
+
+
+
+// Add & Remove Active link from NavLink
+mainLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    mainLinks.forEach((el) => {
+      el.classList.remove("active");
+    });
+    this.classList.add("active");
+  });
+});
+
 
 dropIcon.forEach((link) => {
   link.addEventListener("click", function (e) {
@@ -14,7 +32,7 @@ dropIcon.forEach((link) => {
 barIcon.addEventListener("click", function () {
   mainSection.classList.toggle("f-width");
 });
-let dataToShow = document.querySelectorAll(".data");
+
 links.forEach((link) => {
   link.addEventListener("click", function () {
     links.forEach((e) => {
@@ -29,3 +47,17 @@ links.forEach((link) => {
     this.classList.add("active");
   });
 });
+
+list.addEventListener("click", function () {
+  alertCarts.forEach((el) => {
+    el.classList.add("list");
+  });
+});
+
+grid.addEventListener("click", function () {
+  alertCarts.forEach((el) => {
+    el.classList.remove("list");
+  });
+});
+
+
