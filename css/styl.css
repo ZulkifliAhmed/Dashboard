@@ -456,6 +456,9 @@ header .name .drop-nav li a {
 .main-section .main-content .big-carts.list {
   grid-template-columns: repeat(1, 1fr);
 }
+.main-section .big-carts.list .cart {
+  padding: 25px 40px;
+}
 .main-section .big-carts .cart {
   padding: 20px 15px;
   border-radius: 5px;
@@ -491,6 +494,12 @@ header .name .drop-nav li a {
   align-items: center;
   gap: 5px;
 }
+.main-section  .big-carts.list .cart .rate .users,
+.main-section  .big-carts.list .cart .rate .stars {
+  padding: 10px 20px;
+  font-size: 15px;
+  gap: 10px;
+}
 .main-section .rate .stars .fa-star {
   color: #ffdc64;
 }
@@ -503,12 +512,19 @@ header .name .drop-nav li a {
   gap: 5px;
   z-index: 22;
 }
+.main-section  .big-carts.list .cart .titel {
+  gap: 15px;
+}
 .main-section .cart .titel .avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: 2px solid #d7aefe;
   overflow: hidden;
+}
+.main-section .big-carts.list .cart .titel .avatar {
+  width: 60px;
+  height: 60px;
 }
 .main-section .cart .titel .avatar img {
   width: 100%;
@@ -520,8 +536,15 @@ header .name .drop-nav li a {
   font-size: 16px;
   font-weight: normal;
 }
+.main-section .big-carts.list .cart .titel .description h2 {
+  margin-bottom: 10px;
+  font-size: 19px;
+}
 .main-section .cart .titel .description p {
   font-size: 13px;
+}
+.main-section .big-carts.list .cart .titel .description p {
+  font-size: 16px;
 }
 .main-section .cart .information {
   z-index: 22;
@@ -530,6 +553,9 @@ header .name .drop-nav li a {
   color: #fff;
   font-size: 13px;
 }
+.main-section .big-carts.list .cart .information a {
+  font-size: 15px;
+}
 .main-section .big-carts .big-img {
   width: 180px;
   height: 180px;
@@ -537,6 +563,10 @@ header .name .drop-nav li a {
   right: -20px;
   bottom: 0;
   z-index: 11;
+}
+.main-section .big-carts.list .big-img {
+  width: 220px;
+  height: 220px;
 }
 .main-section .big-carts .big-img img {
   width: 100%;
@@ -578,6 +608,9 @@ header .name .drop-nav li a {
   border-radius: 5px;
   background-color: #fff;
 }
+.main-section .small-carts.list .cart {
+  padding: 25px;
+}
 .main-section .small-carts .cart .top {
   display: flex;
   justify-content: space-between;
@@ -590,11 +623,18 @@ header .name .drop-nav li a {
   align-items: center;
   gap: 10px;
 }
+.main-section .small-carts.list .top .titel {
+  gap: 20px;
+}
 .main-section .cart .top .titel .img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   overflow: hidden;
+}
+.main-section .small-carts.list .top .titel .img {
+  width: 60px;
+  height: 60px;
 }
 .main-section .cart .top .titel img {
   width: 100%;
@@ -606,9 +646,15 @@ header .name .drop-nav li a {
   font-weight: 500;
   margin-bottom: 5px;
 }
+.main-section .small-carts.list .cart .top .titel h4 {
+  font-size: 17px;
+}
 .main-section .small-carts .cart .top .titel p {
   font-size: 13px;
   color: #a9a9a9;
+}
+.main-section .small-carts.list  .cart .top .titel p {
+  font-size: 15px;
 }
 .main-section .small-carts .top .more {
   position: relative;
@@ -616,6 +662,9 @@ header .name .drop-nav li a {
 .main-section .small-carts .top .more .fa-ellipsis-vertical {
   padding: 0 5px;
   cursor: pointer;
+}
+.main-section .small-carts.list  .top .more .fa-ellipsis-vertical {
+  font-size: 22px;
 }
 .main-section .small-carts .top .more ul {
   padding: 15px 20px 0;
@@ -627,12 +676,19 @@ header .name .drop-nav li a {
   box-shadow: 0 5px 19px rgba(0, 0, 0, 0.149);
   display: none;
 }
+.main-section .small-carts.list  .top .more ul {
+  padding: 20px 25px 0;
+}
 .main-section .top .more ul li {
   margin-bottom: 10px;
   font-size: 13px;
   text-transform: capitalize;
   cursor: pointer;
   transition: 0.3s ease;
+}
+.main-section .small-carts.list  .top .more ul li {
+  margin-bottom: 15px;
+  font-size: 15px;
 }
 .main-section .top .more ul li:hover {
   color: red;
@@ -657,6 +713,11 @@ header .name .drop-nav li a {
   justify-content: center;
   align-items: center;
 }
+.main-section .small-carts.list  .bottom .user {
+  width: 42px;
+  height: 42px;
+  margin-left: -12px;
+}
 .main-section .small-carts .bottom .user img {
   width: 100%;
   height: 100%;
@@ -671,7 +732,9 @@ header .name .drop-nav li a {
   font-weight: 400;
   text-transform: capitalize;
 }
-
+.main-section .small-carts.list  .bottom span {
+  font-size: 16px;
+}
 /* Start Media Queries */
 
 /* Medium devices (tablets, less than 1200px) */
@@ -694,7 +757,7 @@ header .name .drop-nav li a {
   .main-section {
     grid-template-columns: 25% 75%;
   }
-   .main-section.f-width {
+  .main-section.f-width {
     grid-template-columns: 8% 92%;
   }
   .main-section .main-content {
