@@ -8,9 +8,7 @@ let barIcon = document.getElementById("bar"),
   dropIcon = document.querySelectorAll(".drop-dawon"),
   dataToShow = document.querySelectorAll(".data");
 
-
-
-// Add & Remove Active link from NavLink
+// Add & Remove Active link in Side Bar Menu
 mainLinks.forEach((link) => {
   link.addEventListener("click", function () {
     mainLinks.forEach((el) => {
@@ -20,7 +18,7 @@ mainLinks.forEach((link) => {
   });
 });
 
-
+// Toggle all class Menu
 dropIcon.forEach((link) => {
   link.addEventListener("click", function (e) {
     e.preventDefault;
@@ -29,10 +27,12 @@ dropIcon.forEach((link) => {
   });
 });
 
+// Side Bar Toggler
 barIcon.addEventListener("click", function () {
   mainSection.classList.toggle("f-width");
 });
 
+// Remove & Add Active class in Top links & Data-Show class
 links.forEach((link) => {
   link.addEventListener("click", function () {
     links.forEach((e) => {
@@ -48,16 +48,16 @@ links.forEach((link) => {
   });
 });
 
+// Show Content in List Order
 list.addEventListener("click", function () {
   alertCarts.forEach((el) => {
     el.classList.add("list");
   });
 });
 
+// Show Content in Grid Order
 grid.addEventListener("click", function () {
   alertCarts.forEach((el) => {
     el.classList.remove("list");
   });
 });
-
-

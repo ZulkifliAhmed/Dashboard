@@ -66,14 +66,14 @@ header .search .fa-magnifying-glass {
   cursor: pointer;
 }
 
-header .profil {
+header .profile {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-header .profil .notification {
+header .profile .notification {
   width: 35px;
   height: 35px;
   display: flex;
@@ -83,7 +83,7 @@ header .profil .notification {
   cursor: pointer;
 }
 
-header .profil .notification .fa-bell {
+header .profile .notification .fa-bell {
   font-size: 18px;
   animation: moveBell 1.5s linear infinite;
 }
@@ -99,7 +99,7 @@ header .profil .notification .fa-bell {
   }
 }
 
-header .profil .notification span {
+header .profile .notification span {
   width: 18px;
   height: 18px;
   display: flex;
@@ -115,14 +115,14 @@ header .profil .notification span {
   background-color: #f50057;
 }
 
-header .profil .profil-info {
+header .profile .profile-info {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
 
-header .profil .profil-info .img {
+header .profile .profile-info .img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -132,20 +132,20 @@ header .profil .profil-info .img {
   align-items: center;
 }
 
-header .profil .profil-info .img img {
+header .profile .profile-info .img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-header .profil-info .name {
+header .profile-info .name {
   font-size: 15px;
   text-transform: capitalize;
   position: relative;
   cursor: default;
 }
 
-header .profil-info .name .fa-angle-down {
+header .profile-info .name .fa-angle-down {
   margin-left: 10px;
   cursor: pointer;
 }
@@ -901,17 +901,17 @@ header .name .drop-nav li a {
   header .logo .fa-bars {
     font-size: 19px;
   }
-  header .profil .notification {
+  header .profile .notification {
     width: 30px;
     height: 30px;
   }
-  header .profil {
+  header .profile {
     gap: 5px;
   }
-  header .profil .profil-info {
+  header .profile .profile-info {
     gap: 5px;
   }
-  header .profil-info .name span {
+  header .profile-info .name span {
     display: none;
   }
   header .name .drop-nav {
