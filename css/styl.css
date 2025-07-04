@@ -843,7 +843,6 @@ header .name .drop-nav li a {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .main-section {
@@ -923,7 +922,6 @@ header .name .drop-nav li a {
   .main-section {
     grid-template-columns: 0% 100%;
   }
-
   .main-section .side-bar {
     overflow: hidden;
   }
